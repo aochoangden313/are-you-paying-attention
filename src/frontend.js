@@ -39,7 +39,7 @@ function Quiz(props) {
   }
 
   return (
-    <div className="paying-attention-frontend">
+    <div className="paying-attention-frontend" style={{backgroundColor: props.bgColor, textAlign: props.theAligment}}>
       {props.question}
       <ul>
         {props.answers.map((answer, index) => {
